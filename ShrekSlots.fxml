@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShrekSlotsController">
+   <children>
+      <Label layoutX="44.0" layoutY="291.0" text="Amount Inserted: $" />
+      <TextField fx:id="userInput" layoutX="148.0" layoutY="286.0" />
+      <Label layoutX="327.0" layoutY="283.0" prefHeight="17.0" prefWidth="143.0" text="Amount Won This Spin: $" />
+      <Label layoutX="353.0" layoutY="313.0" text="Total Amount Won: $" />
+      <ImageView fx:id="imgOne" fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shrek.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgTwo" fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@donkey.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgThree" fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Farquad.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="spinButton" layoutX="257.0" layoutY="347.0" mnemonicParsing="false" onAction="#spinButtonListener" prefHeight="27.0" prefWidth="104.0" text="Spin" />
+      <TextField fx:id="amountWon" layoutX="470.0" layoutY="278.0" prefHeight="27.0" prefWidth="96.0" />
+      <TextField fx:id="totalWon" layoutX="470.0" layoutY="308.0" prefHeight="27.0" prefWidth="96.0" />
+   </children>
+</AnchorPane>
